@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Example</title>
+    <!-- bootstrap js pack -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap css pack -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- this is importing line for font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- internal css styles -->
+    <style>
+      .heading {
+        font-size: 12px;
+        font-weight: 100;
+      }
+      .body {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body class="text-bg-secondary">
+    <div class="m-5">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Linux CNV
+            </button>
+          </h2>
+
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+          >
+            <div class="accordion-body">
+              <div class="d-flex flex-row justify-content-between">
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Name</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                  <div>
+                    <p class="heading">Type</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div>
+                    <p class="heading">Resources ID</p>
+                    <p class="body">...</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Updated At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div class="d-flex flex-colomn justify-content-between">
+                    <div>
+                      <p class="heading">Template Data</p>
+                      <p class="body"><a href="#">view</a></p>
+                    </div>
+                    <div>
+                      <p class="heading">Operation Name</p>
+                      <p class="body">CREATION</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created By</p>
+                    <p class="body">Name</p>
+                  </div>
+                  <div>
+                    <p class="heading">Operation Status</p>
+                    <p class="body">SUCCESS</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Project ID</p>
+                    <p class="body">mk-project</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              Linux CNV Temp
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <div class="d-flex flex-row justify-content-between">
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Name</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                  <div>
+                    <p class="heading">Type</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div>
+                    <p class="heading">Resources ID</p>
+                    <p class="body">...</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Updated At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div class="d-flex flex-colomn justify-content-between">
+                    <div>
+                      <p class="heading">Template Data</p>
+                      <p class="body"><a href="#">view</a></p>
+                    </div>
+                    <div>
+                      <p class="heading">Operation Name</p>
+                      <p class="body">CREATION</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created By</p>
+                    <p class="body">Name</p>
+                  </div>
+                  <div>
+                    <p class="heading">Operation Status</p>
+                    <p class="body">SUCCESS</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Project ID</p>
+                    <p class="body">mk-project</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              IDE Temp
+            </button>
+          </h2>
+
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <div class="d-flex flex-row justify-content-between">
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Name</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                  <div>
+                    <p class="heading">Type</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div>
+                    <p class="heading">Resources ID</p>
+                    <p class="body">...</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Updated At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div class="d-flex flex-colomn justify-content-between">
+                    <div>
+                      <p class="heading">Template Data</p>
+                      <p class="body"><a href="#">view</a></p>
+                    </div>
+                    <div>
+                      <p class="heading">Operation Name</p>
+                      <p class="body">CREATION</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created By</p>
+                    <p class="body">Name</p>
+                  </div>
+                  <div>
+                    <p class="heading">Operation Status</p>
+                    <p class="body">SUCCESS</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Project ID</p>
+                    <p class="body">mk-project</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              asd
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFour"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <div class="d-flex flex-row justify-content-between">
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Name</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                  <div>
+                    <p class="heading">Type</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div>
+                    <p class="heading">Resources ID</p>
+                    <p class="body">...</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Updated At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div class="d-flex flex-colomn justify-content-between">
+                    <div>
+                      <p class="heading">Template Data</p>
+                      <p class="body"><a href="#">view</a></p>
+                    </div>
+                    <div>
+                      <p class="heading">Operation Name</p>
+                      <p class="body">CREATION</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created By</p>
+                    <p class="body">Name</p>
+                  </div>
+                  <div>
+                    <p class="heading">Operation Status</p>
+                    <p class="body">SUCCESS</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Project ID</p>
+                    <p class="body">mk-project</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive"
+            >
+              IDE
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFive"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <div class="d-flex flex-row justify-content-between">
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Name</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                  <div>
+                    <p class="heading">Type</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div>
+                    <p class="heading">Resources ID</p>
+                    <p class="body">...</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Updated At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div class="d-flex flex-colomn justify-content-between">
+                    <div>
+                      <p class="heading">Template Data</p>
+                      <p class="body"><a href="#">view</a></p>
+                    </div>
+                    <div>
+                      <p class="heading">Operation Name</p>
+                      <p class="body">CREATION</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created By</p>
+                    <p class="body">Name</p>
+                  </div>
+                  <div>
+                    <p class="heading">Operation Status</p>
+                    <p class="body">SUCCESS</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Project ID</p>
+                    <p class="body">mk-project</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSix"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSix"
+            >
+              asd
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSix"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <div class="d-flex flex-row justify-content-between">
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Name</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                  <div>
+                    <p class="heading">Type</p>
+                    <p class="body">Linux CNV</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div>
+                    <p class="heading">Resources ID</p>
+                    <p class="body">...</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Updated At</p>
+                    <p class="body date">Date</p>
+                  </div>
+                  <div class="d-flex flex-colomn justify-content-between">
+                    <div>
+                      <p class="heading">Template Data</p>
+                      <p class="body"><a href="#">view</a></p>
+                    </div>
+                    <div>
+                      <p class="heading">Operation Name</p>
+                      <p class="body">CREATION</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Created By</p>
+                    <p class="body">Name</p>
+                  </div>
+                  <div>
+                    <p class="heading">Operation Status</p>
+                    <p class="body">SUCCESS</p>
+                  </div>
+                </div>
+                <div class="p-3">
+                  <div>
+                    <p class="heading">Project ID</p>
+                    <p class="body">mk-project</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const dateElement = document.querySelectorAll(".date");
+
+    const now = new Date();
+
+    dateElement.forEach((e) => {
+      e.innerHTML = now;
+    });
+
+    // console.log(date);
+  </script>
+</html>
